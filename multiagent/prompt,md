@@ -1,0 +1,23 @@
+i want to build single agent system and multi agent system 
+and want to compare token cost between them
+
+so build this accordingly 
+
+single agent system
+
+it will have one llm (groq) with api key GROQ_API_KEY
+
+and will have to two tools that is search tool and one calculator tool
+
+and now multi agent system will have 
+3 llms (same groq)
+
+first is ask_manager_llm which will not have access to 
+any tool just have to decide which helper llm he should calculators
+helper llms should be web_search_llm which will have only access to web search tool
+and another helper llm is calculator llm which will have only access to calculator 
+
+and run one task which will requires atleast to 1 call to search tool and 2 call to calculator
+
+and should generate report of token usage 
+

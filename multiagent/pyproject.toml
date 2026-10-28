@@ -1,0 +1,11 @@
+[project]
+name = "multiagent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "ddgs>=9.8.0",
+    "groq>=1.0.0",
+    "python-dotenv>=1.2.1",
+]
