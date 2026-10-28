@@ -1,0 +1,62 @@
+{
+  "model": "openai/gpt-oss-120b",
+  "task": "Search the web for the height of Mount Everest in meters. Then use the calculator to (1) convert that height to feet (multiply by 3.28084) and (2) compute half of the height in meters. Give a short final answer.",
+  "single_agent": {
+    "answer": "Mount\u202fEverest\u2019s official height is **8,848.86\u202fm**.  \n- In feet: **\u2248\u202f29,031.7\u202fft**.  \n- Half that height in meters: **\u2248\u202f4,424.43\u202fm**.",
+    "per_agent": {
+      "single_agent": {
+        "llm_calls": 5,
+        "prompt": 3071,
+        "completion": 338,
+        "total": 3409,
+        "search_calls": 2,
+        "calculator_calls": 2
+      }
+    },
+    "totals": {
+      "llm_calls": 5,
+      "prompt": 3071,
+      "completion": 338,
+      "total": 3409,
+      "search_calls": 2,
+      "calculator_calls": 2
+    }
+  },
+  "multi_agent": {
+    "answer": "Mount Everest is 8,848.86\u202fm tall (\u2248\u202f29,031.69\u202fft). Half of that height is 4,424.43\u202fm.",
+    "per_agent": {
+      "ask_manager_llm": {
+        "llm_calls": 3,
+        "prompt": 1080,
+        "completion": 407,
+        "total": 1487,
+        "search_calls": 0,
+        "calculator_calls": 0
+      },
+      "web_search_llm": {
+        "llm_calls": 2,
+        "prompt": 646,
+        "completion": 159,
+        "total": 805,
+        "search_calls": 1,
+        "calculator_calls": 0
+      },
+      "calculator_llm": {
+        "llm_calls": 3,
+        "prompt": 745,
+        "completion": 349,
+        "total": 1094,
+        "search_calls": 0,
+        "calculator_calls": 2
+      }
+    },
+    "totals": {
+      "llm_calls": 8,
+      "prompt": 2471,
+      "completion": 915,
+      "total": 3386,
+      "search_calls": 1,
+      "calculator_calls": 2
+    }
+  }
+}
